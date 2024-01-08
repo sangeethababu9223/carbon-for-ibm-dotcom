@@ -12,4 +12,18 @@
 @use '../image';
 
 @mixin content-block-simple {
+<<<<<<< HEAD
+=======
+  .#{$prefix}--content-block-simple__media-video {
+    max-inline-size: to-rem(640px);
+  }
+
+  .#{$prefix}--content-block-simple__content {
+    .#{$prefix}--content-item {
+      &:first-of-type {
+        margin-block-start: 0;
+      }
+    }
+  }
+>>>>>>> upstream/main
 }

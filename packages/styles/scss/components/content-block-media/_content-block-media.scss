@@ -18,7 +18,6 @@
 @use '../feature-card';
 
 @mixin themed-items {
-  color: $text-primary;
   background: $background;
 }
 
