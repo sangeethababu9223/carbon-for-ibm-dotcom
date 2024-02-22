@@ -265,6 +265,7 @@ class CDSTable extends HostListenerMixin(LitElement) {
       const cellB = b.querySelectorAll(
         (this.constructor as typeof CDSTable).selectorTableRowCells
       )[columnIndex].textContent;
+
       return (
         this.collationFactors[sortDirection] *
         this.customSortRow(cellA, cellB, this.collator)
@@ -842,7 +843,7 @@ class CDSTable extends HostListenerMixin(LitElement) {
     });
     const columns = [...this._tableHeaderRow.children];
     let sortDirection;
-    let columnIndex = -1;
+    let columnIndex = 0;
     columns.forEach((column, index) => {
       if (
         column.hasAttribute('sort-direction') &&
